@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 
 /**
@@ -32,4 +32,4 @@ int largest_number(int a, int b, int c)
 			largest = b;
 	}
 	return (largest);
-
+}
