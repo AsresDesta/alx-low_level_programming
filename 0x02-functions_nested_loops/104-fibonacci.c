@@ -7,8 +7,6 @@
   */
 int main(void)
 {
-	int l;
-	unsigned long int l;
 	unsigned long int i;
 	unsigned long int bef = 1;
 	unsigned long int aft = 2;
