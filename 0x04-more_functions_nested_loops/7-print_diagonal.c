@@ -1,10 +1,10 @@
-i#include "main.h"
+#include "main.h"
 /**
  * print_diagonal - prints diagonal line
  * @n: print int
  * Return: Always 0.
  */
-void print -diagonal(int n)
+void print_diagonal(int n)
 {
 	int i;
 	int b;
