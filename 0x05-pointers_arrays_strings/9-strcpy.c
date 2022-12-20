@@ -1,24 +1,22 @@
-i#include "main.h"
-#include <stdio.h>
-/**
- * print_arry - prints n elements of an array of integers.
- * @a: pointer to array.
- * @n: number of array elements.
- *
- * Return : void.
- */
-void print_array(int *a, int n)
-{
-	int i;
+#include "main.h"
 
-	for (i = 0; i < n; i++)
+/**
+ * _strcpy -copiar el contenido de uno a otra variable
+ * @dest: This is destiny
+ * @src: This is the copia
+ *
+ * Return: This return copy
+ */
+char *_strcpy(char *dest, char *src);
+{
+	char *strat = dest;
+
+	while (*src != '\0')
 	{
-		printf("%d", a[i]);
-		if (i != n - 1)
-		{
-			printf(",");
-			printf(" ");
-		}
+		*dest = *src;
+		dest++;
+		src++;
 	}
-	printf("\n");
+	*dest = '\0';
+	return (start);
 }
