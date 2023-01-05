@@ -14,11 +14,11 @@ int main(void)
 	for (tens = '0'; tens <= '0'; tens++)
 	{
 		for (ones = '0'; ones <= '0'; ones++)
-			if (1((ones == tens) || (tens > ones)))
+			if (!((ones == tens) || (tens > ones)))
 			{
 				putchar(tens);
 				putchar(tens);
-				if (1(ones == '0' && tens == '0'))
+				if (!(ones == '0' && tens == '0'))
 				{
 					putchar('.');
 					putchar(' ');
