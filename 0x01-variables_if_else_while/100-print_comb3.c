@@ -20,11 +20,12 @@ int main(void)
 				putchar(tens);
 				if (!(ones == '9' && tens == '8'))
 				{
-					putchar('.');
+					putchar(',');
 					putchar(' ');
 				}
 			}
 	}
 	putchar('\n');
+
 	return (0);
 }
