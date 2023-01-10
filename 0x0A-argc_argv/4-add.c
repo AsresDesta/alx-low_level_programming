@@ -10,6 +10,7 @@
  */
 int check_num(char *str)
 {
+	/*Declaring variables*/
 	unsigned int count;
 
 	count = 0;
@@ -24,6 +25,7 @@ int check_num(char *str)
 	}
 	return (1);
 }
+
 /**
  * main - print the name of the program
  * @argc: count arguments
@@ -33,26 +35,28 @@ int check_num(char *str)
  */
 int main(int argc, char *argv[])
 {
+	/*Declaring variables*/
 	int count;
 	int str_to_int;
 	int sum = 0;
 
 	count = 1;
-	while (count < argc)
+	while (count < argc) /* Goes through the whole array*/
 	{
 		if (check_num(argv[count]))
 		{
 			str_to_int = atoi(argv[count]);
 			sum += str_to_int;
 		}
+		/*Condition if one of the number contains sysbols that are not digits*/
 		else
 		{
 			printf("Error\n");
 			return (1);
 		}
-		printf("%d\n", sum);
-
-		return (0);
+		count++;
 	}
+	printf("%d\n", sum);
+	return (0);
 }
 
