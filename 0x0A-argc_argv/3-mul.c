@@ -1,10 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * main - prints the multiplication of two integers 
- * @argc: Argument count 
+ * main - prints the multiplication of two integers
+ * @argc:  rgument count
  * @argv: Argument vector
  * Return: 0 if true, 1 if false
  */
