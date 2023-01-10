@@ -25,7 +25,7 @@ int check_num(char *str)
 	return (1);
 }
 /**
- * main - print the name of the program 
+ * main - print the name of the program
  * @argc: count arguments
  * @argv: Arguments
  *
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 	int str_to_int;
 	int sum = 0;
 
-	count =1;
+	count = 1;
 	while (count < argc)
 	{
 		if (check_num(argv[count]))
@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 		}
 		printf("%d\n", sum);
 
-		return(0);
+		return (0);
 	}
 }
 
