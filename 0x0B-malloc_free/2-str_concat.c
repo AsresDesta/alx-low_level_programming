@@ -19,7 +19,7 @@ int _strlen(char *s)
 
 /**
  * str_concat - back a pointer to array
- * @s1: array one
+ * @s1: Array one
  * @s2: Array two
  * Return: Always an array dinamic
  */
