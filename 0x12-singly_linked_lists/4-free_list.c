@@ -1,28 +1,20 @@
 #include "lists.h"
-#include <stdio.h>
+#include <stdlib.h>
 
 /**
- * print_list - prints all the elemnts of a list_t list
- * @h: The list_t list
- *
- * Return: the number of nodes in h
+ * free_list - free a list_t list
+ * @head: A pointer to the list_t list
  */
-#include "lists.h"
-#include <stdio.h>
+void free_list(list_t *head)
+{
+	list_t *tmp;
 
-/**
- * print_list - prints all the elemnts of a list_t list
- * @h: The list_t list
- *
- * Return: the number of nodes in h
- */
-#include "lists.h"
-#include <stdio.h>
-
-/**
- * print_list - prints all the elemnts of a list_t list
- * @h: The list_t list
- *
- * Return: the number of nodes in h
- */
+	while (head)
+	{
+		tmp = head->next;
+		free(head->str);
+		free(head);
+		head = tmp;
+	}
+}
 
