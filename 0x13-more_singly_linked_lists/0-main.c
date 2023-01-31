@@ -12,21 +12,25 @@ int main(void)
 {
     listint_t *head;
     listint_t *new;
-    listint_t hello = {8, NULL};
+    listint_t hello = {"world", 5, NULL};
     size_t n;
 
     head = &hello;
-    new = malloc(sizeof(listint_t));
+    new = malloc(sizeof(list_t));
     if (new == NULL)
     {
         printf("Error\n");
         return (1);
     }
-    new->n = 9;
+    new->str = strdup("Hello");
+    new->len = 5;
     new->next = head;
     head = new;
-    n = print_listint(head);
+    n = print_list(head);
     printf("-> %lu elements\n", n);
-    free(new);
-    return (0);
+
+    printf("\n");
+    free(new->str);
+    new->str = NULL;
+    n = print_list(head);
 }
